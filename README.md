@@ -1,5 +1,8 @@
 # Non-ergodic Methodology and Modeling Tools
 
+## Installation
+`poetry install` will install most of the dependencies but not pystan because it cannot be built with pep17.  To build pystan, run `pip wheel --no-cache-dir --no-use-pep517 "pystan (==2.19.0.0)"` then install that local wheel e.g. `pip install ./pystan-2.19.0.0-cp310-cp310-linux_x86_64.whl`.
+
 This repository contains software tools for developing Nonergodic Ground Motion Models (NGMMs) based on the varying coefficient (Landwehr et al., 2016) and cell-specific anelastic attention approach (Dawood and Rodriguez‐Marek, 2013). 
 Developed tools are available for R using the statistical package (R-INLA, https://www.r-inla.org/) and in python using the CMDSTAN and PYSTAN interface packages for the Bayesian software (Stan, https://mc-stan.org/). Documentation and detailed instructions on the use of the developed tools is provided in [Lavrentiadis et al., 2022a GIRS report](https://www.risksciences.ucla.edu/girs-reports/2022/04). A general introduction and considerations for the development of NGMMs are presented in Lavrentiadis et al., 2022b.
 
